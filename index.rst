@@ -15,13 +15,14 @@ head movements.
 Rotating the head in front of a static sound creates dynamic changes in 
 localisation cues that could be mistaken for a source that moves. To interpret 
 these cues correctly, the listener must take the motion of the head into account. 
-Geometrically, the angular velocity of a sound source in the world (S) is the 
-sum of the velocity of head rotation (H) and the angular velocity of the source 
-in the acoustic image (A): S = A + H. Perceived auditory motion is therefore 
-determined by how well the auditory system estimates A and H. We used a 
-psychophysical motion-nulling technique in which the lateral motion of a source 
-was adjusted to determine the velocity at which it appeared stationary during 
-head rotation. If S is recovered veridically, then null velocity should be 0.
+Geometrically, the angular velocity of a sound source in the world (:math:`S`)
+is the sum of the velocity of head rotation (:math:`H`) and the angular
+velocity of the source in the acoustic image :math:`(A): S = A + H`. Perceived
+auditory motion is therefore determined by how well the auditory system
+estimates A and H. We used a psychophysical motion-nulling technique in which
+the lateral motion of a source was adjusted to determine the velocity at which
+it appeared stationary during head rotation. If S is recovered veridically,
+then null velocity should be 0.
 
 Moving sounds were created using a cross-fading technique in which a white noise 
 source was moved across a circular array of speakers by sweeping a spatial 
