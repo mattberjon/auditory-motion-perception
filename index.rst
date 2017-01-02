@@ -56,6 +56,7 @@ to that obtained in vision.
 .. toctree::
    :maxdepth: 2
 
+   localisation
    filehne
    lab
    bibliography
