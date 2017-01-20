@@ -49,16 +49,16 @@ became known as the duplex theory.
 
 .. _fig-itd-ild-representation:
 
-
-.. figure:: _static/itd_ild_scheme.svg
+.. figure:: _static/itd_ild_schematic.svg
    :align:  center
 
-.. figure:: _static/itd_ild_data.svg
-   :align:  center
 
    Representation of the binaural cues :term:`ITD` and :term:`ILD` (After
    :cite:`Daniel2011`). Representation of Interaural time and intensity
    differences for a monochromatic sound sound.
+
+.. .. figure:: _static/itd_ild_data.svg
+   :align:  center
 
 .. todo::
   Convert the TeX images into SVG and save them into the _static folder.
