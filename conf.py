@@ -31,12 +31,13 @@
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx.ext.autodoc',
-    'sphinx.ext.todo',
-    'sphinx.ext.coverage',
-    'sphinx.ext.mathjax',
-    'sphinx.ext.viewcode',
-    'sphinxcontrib.bibtex',
+extensions = [
+        'sphinxcontrib.bibtex',
+        'sphinx.ext.autodoc',
+        'sphinx.ext.todo',
+        'sphinx.ext.coverage',
+        'sphinx.ext.mathjax',
+        'sphinx.ext.viewcode',
     ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -143,7 +144,9 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'AuditoryMotionPerception.tex', 'Auditory Motion Perception Documentation',
+    (master_doc,
+        'AuditoryMotionPerception.tex',
+        'Auditory Motion Perception Documentation',
      'Matthieu Berjon', 'manual'),
 ]
 
@@ -153,7 +156,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'auditorymotionperception', 'Auditory Motion Perception Documentation',
+    (master_doc,
+        'auditorymotionperception', 'Auditory Motion Perception Documentation',
      [author], 1)
 ]
 
@@ -164,11 +168,11 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'AuditoryMotionPerception', 'Auditory Motion Perception Documentation',
+    (master_doc,
+        'AuditoryMotionPerception', 'Auditory Motion Perception Documentation',
      author, 'AuditoryMotionPerception', 'One line description of project.',
      'Miscellaneous'),
 ]
-
 
 
 # -- Options for Epub output ----------------------------------------------
