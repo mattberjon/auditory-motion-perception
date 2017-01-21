@@ -59,7 +59,6 @@ became known as the duplex theory.
    :cite:`Daniel2011`). Representation of Interaural time and intensity
    differences for a monochromatic sound sound.
 
-
 The duplex theory was supported by several studies such as :cite:`Stevens1936`, 
 who found a minimum in accuracy for pure-tone localisation at around
 :math:`3000~Hz` (:math:`\sim{11}~cm`). :cite:`Sandel1955` found a minimum
@@ -137,15 +136,16 @@ case of remaining confusion about a source position, :cite:`Wightman1999`
 showed that head movements will solve these ambiguities and support the
 Wallach's theory (:cite:`Wallach1940,Thurlow1967`).
 
-.. _fig-cue-frequency-repartition:
-
-.. figure:: _static/cue_frequency_repartition.svg
-
-   Representation of main auditory cues used for localisation according to the
-   frequency.
 
 .. todo::
    Check if this figure is at its right place
+
+  .. _fig-cue-frequency-repartition:
+
+  .. figure:: _static/cue_frequency_repartition.svg
+
+   Representation of main auditory cues used for localisation according to the
+   frequency.
 
 Localisation in distance
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -230,7 +230,7 @@ suggested that an improvement of localisation accuracy in azimuth can be
 obtained by dynamic cues even if the sound is too short for the listener to
 face it. This result showed that localisation cues called "dynamic" introduced
 by head movements contribute in themselves to the localisation percept of a
-source. According to :cite:`Macpherson2008,Macpherson2009`, head movements
+source. According to :cite:`Macpherson2009`, head movements
 from :math:`5^\circ` (at :math:`50^\circ/s`) generate usable dynamic cues. This
 is why head movements are beneficial even for short sound as described by
 :cite:`Perrett1997a` comparing a localization performances of a low-pass noise
@@ -252,3 +252,4 @@ explained this by the fact that in these conditions the amplitude of dynamic
 variations of interaural cues lead by the head rotations are lower than sources
 closer of the horizontal plane. By using a low-pass noise, :cite:`Perrett1997`
 suggested that :term:`ITD` changes are more reliable than :term:`ILD`.
+
