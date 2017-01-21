@@ -137,15 +137,14 @@ showed that head movements will solve these ambiguities and support the
 Wallach's theory (:cite:`Wallach1940,Thurlow1967`).
 
 
-.. todo::
-   Check if this figure is at its right place
 
-  .. _fig-cue-frequency-repartition:
+.. _fig-cue-frequency-repartition:
 
-  .. figure:: _static/cue_frequency_repartition.svg
+.. figure:: _static/cues_frequency_repartition.svg
 
    Representation of main auditory cues used for localisation according to the
    frequency.
+
 
 Localisation in distance
 ^^^^^^^^^^^^^^^^^^^^^^^^
