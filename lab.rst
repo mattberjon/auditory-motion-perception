@@ -1,7 +1,7 @@
 .. _ref-chap-lab:
 
 Laboratory
-==========
+##########
 
 In order to measure the phenomena that we were interested in (see
 chapter :ref:`ref-chap-filehne`). We created for the Perception group of the
@@ -16,7 +16,7 @@ will give a priority to two main techniques:
 .. _ref-chap-lab-sec-vas-ras:
 
 Virtual Auditory Space vs Real Auditory Space
----------------------------------------------
+=============================================
 
 The :term:`VAS` is the ability to create the illusion of any free-field
 environment using a closed-field sound system such as headphones or
@@ -33,8 +33,7 @@ perceived naturally. The use of the :term:`HRTF` is the best way to reproduce
 the localisation cues needed.
          
 Binaural broadcasting technique
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
+-------------------------------
 
 The binaural synthesis is based on the use of the pair of binaural filters
 obtained from the :term:`HRTF`. At each source position in the space :math:`r,
@@ -84,7 +83,7 @@ the the distortion brought by the headphones.
 
 
 Multi loudspeakers technique
-++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The use of loudspeakers instead of headphones avoid troubles about
 externalisation of the sound and a difficult :term:`HRTF` measuring process.
@@ -100,7 +99,7 @@ exist such as the interpolation of sounds located between two speakers.
   position that is located between two speakers.
 
 Multi loudspeakers technique
-++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The use of loudspeakers instead of headphones avoid troubles about
 externalisation of the sound and a difficult :term:`HRTF` measuring process.
@@ -116,7 +115,7 @@ exist such as the interpolation of sounds located between two speakers.
   position that is located between two speakers.
 
 Equipment
----------
+=========
 
 Visual motion has been intensively investigated and need a quite standardised
 equipment (see :cite:`Koenigs2010,Brenner2001,Freeman2001`). Audio motion
@@ -144,7 +143,7 @@ given on :numref:`ref-fig-lab-photo`.
    Photo of the laboratory with a dummy head instead of a participant.
 
 The room
-++++++++
+--------
 
 is a parallelipedic shape with a superficy of :math:`13.76m^2` (:math:`3.2 \times
 4.3m`). The lab has several characteristics such as:
@@ -173,7 +172,7 @@ participants and not interfere in the experiments.
    Noise floor of the laboratory with cooler system on.
 
 Loudspeakers
-++++++++++++
+------------
 
 For the broadcasting of the signal, we needed multiple loudspeakers using a
 :term:`RAS` (see :ref:`ref-chap-lab-sec-vas-ras`). Given the constraints we
@@ -196,7 +195,7 @@ cues.
    Frequency response of the speaker 12 (placed @ :math:`0^\circ`).
 
 Amplifiers
-++++++++++
+----------
 
 Because we decided to keep amplifiers in the room, we needed a passive cooling
 system. We chose four :math:`6` channels *AMP-CH06, Auna* amplifiers: 
@@ -207,7 +206,7 @@ system. We chose four :math:`6` channels *AMP-CH06, Auna* amplifiers:
 - impedance: :math:`16~\Omega`.
 
 Head tracking
-+++++++++++++
+-------------
 
 In order to measure head tracking, we have two systems that is used according
 to the constraints of the experiment. A magnetic head tracker *Flock of Birds,
@@ -222,7 +221,7 @@ accurate and record only rotation in one dimension and position in 2
 dimensions.
 
 Video projector
-+++++++++++++++
+---------------
 
 In order to lead multi modalities experiments such as audiovisual experiments, 
 a video project has been installed. Because of the room characteristics, a
@@ -231,7 +230,7 @@ small and quiet projector were needed. A *Qumi Q2, Vivitek* (see
 participant's head.
 
 Sound card
-++++++++++
+----------
 
 for flexibility we used a *24~I/O, Motu* :term:`DAC` and a *PCIexpress, Motu*
 sound card (see :cite:`Motu2013`). The sound card can handle up to :math:`4`
@@ -239,14 +238,14 @@ sound card (see :cite:`Motu2013`). The sound card can handle up to :math:`4`
 :math:`96` kHz.
 
 IT equipment
-++++++++++++
+------------
 
 The computer is in a operating room next to the lab in order to minimise the
 acoustic impact. The main components of the computer are a *i5-2400, Intel*
 processor with :math:`3` GB of :term:`RAM`.
 
 Softwares
-+++++++++
+---------
 
 Any software capable of using :term:`ASIO` driver can be used to handle the
 high number of channels if there is no need of head tracking. Nevertheless, for
@@ -257,7 +256,7 @@ main advantage of using *Pure Data* is the real time processing and its
 capacities to handle the head tracker *Flock of Birds, Ascension*.
 
 Loudspeaker compensation
-++++++++++++++++++++++++
+------------------------
 
 As shown on :numref:`ref-fig-frequency-response-spk12`, the response of the 
 speaker is chaotic and because of its mechanic assembly, the frequency response
