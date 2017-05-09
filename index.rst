@@ -59,7 +59,7 @@ to that obtained in vision.
    localisation
    filehne
    lab
-   bibliography
+   zbibliography
    glossary
 
 
