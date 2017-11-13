@@ -200,6 +200,7 @@ were free to choose how many blocks they want to do each time. If they chose
 to do at least two blocks, a rest of 5~mins were given between each block.
 
 .. todo::
+
   Why we decided to use this type of pursuit and another one ? Because the
   equivalent of a moving dot is a moving sound but with the problem of a non
   finite width, we choose to use a low pass filter to limit the interferences
@@ -222,7 +223,7 @@ the participants head should cross the :math:`0^\circ` at the same time
 .. _fig_xp_explanation:
 
 .. figure:: _static/xp_explanation.svg
-  :align: center
+   :align: center
 
   Process of the experiment over time and angular position of the head.  The
   black plain line represents the head movement when the pursuit stimulus is
@@ -301,7 +302,159 @@ each trial. This process is achieved by using a local least-squares
 polynomial approximation (approximation of the second order in our case)
 resulting to a low pass filter on the data set [#fn3]_. 
 
+:numref:`fig-head-behaviour` shows a typical head movement on a trial. The ideal
+head movement describes a triangle signal in order to keep a constant speed
+over time and angular displacement.  Nevertheless, participants showed
+difficulties to reproduce correctly this pattern. This is explained by several
+reasons. Firstly, a typical participant pattern is a sinusoidal signal. The
+change of head direction can't be immediate due to the weight and inertia of
+the head. This effect add a delay to the pursuit.  The other problem is poor
+width definition of an audio source. This prevents a good pursuit of the
+source. Because participant were in the dark with no visual cue, they can't use
+speakers or other references to stop or anticipate direction changes. This
+explains why the angular displacement of participant's head can be lower or
+greater than the ideal pattern and add another delay. Nevertheless, as shown by
+the figure :numref:`fig-head-behaviour`, during the phase between head
+direction changes, the participant is able to keep his head movement quite
+steady.
 
+.. todo::
+
+  it could be interesting to compute the percentage around the speed target
+
+.. _fig-head-behaviour:
+
+.. figure:: _static/head_behaviour.svg
+   :align: center
+
+   Head tracking during a trial at condition :math:`20~^\circ/s`. orange plain line
+   represents the ideal head movement over time and angular displacement.  The
+   blue plain line represents the head movement of participant 1 during the
+   trial 4 of session 1.
+
+In order to extract only smooth pursuit movement during both sweeps of the
+pursuit task. It has been decided to keep only 1 second of signal when the
+head is centered on :math:`0^\circ` (see :numref:`fig-head-analysis`). Then,
+for each condition and participant, the mean speed has been computed on each 
+trial and then averaged across all sessions for the pursuit and test. The 
+results are shown on :numref:`fig-head-speeds-avr`.
+
+.. _fig-head-analysis:
+
+.. figure:: _static/head_analysis.svg
+   :align: center
+
+   Head pursuit speed computation. The grey zones represent the meaningful
+   parts of head movements used to compute the head speed during pursuit.
+
+
+The difficulty of participant to follow the pursuit is confirmed by the left
+hand side figure that shows the average for each participant and condition
+during the pursuit presentation. At :math:`20^\circ/s` participant are
+relatively close to the target wheras for :math:`40` and :math:`60^\circ/s` the
+general behaviour is to slow down the head speed regarding the target.
+Nevertheless, participants 4 and 6 tends to keeps their head around the same
+speed whatever the target is and both are around :math:`50^\circ/s`. Even if
+they understood the task, these participant seems to have difficulties to
+extract the speed information of a moving source and can't use or make the
+difference between several sets of interaul cues. If a subject follow perfectly
+a sound source, the pair of :term:`ITD` and :term:`ILD` will not evolve over
+time [#fn4]_. Based on these cues, a subject should be able to tell if he is
+late or ahead regarding the sound source. These cues are the only cues
+available during this task and participant 4 and 6 seems to not be able to use
+in a accurate way these cues.
+
+.. todo::
+  
+  These pursuit information are not accurate enough because of the extraction
+  method used. I need to correct that in order two possible ways: either try to
+  find the 0 deg and extract 1 second of signal around it or transform the
+  signal in order to keep all the meaningful information.
+    
+On the right hand side figure is shown average speed for each participant and
+condition. The global behaviour is that all participant accelerate their head
+movements. This suggests that, even with a reference before each trial, subject
+can't keep the same head speed. The change can be up to :math:`25^\circ/s`,
+that is a radical change between two head sweeps. 
+
+.. _fig-head-speeds-avr:
+
+.. figure:: _static/head_distrib.svg
+   :align: center
+
+   Head speed distribution according to participants and speed conditions.  The
+   left figure represents mean head speeds during the pursuit and right one
+   represents the mean head speeds during the test presentation. For the
+   pursuit, only sweeps without head direction changes was kept.
+
+perceived speed
+^^^^^^^^^^^^^^^
+
+What is the impact of the head movement on the perceived speed of the test. As
+a reminder, participant were asked to judge the direction of the test presented
+while they were moving their head. The only criteria modified during the task
+was the speed of the test. And this task was led for 3 head speeds conditions.
+To analyse the data, for each session, participant and condition, the
+percentage of test perceived in the direction of the head was computed. Then a
+psychometric function was extracted using a Probit analysis
+(:cite:`Finney1971`. The meaningful information is the :term:`PSE` at
+:math:`50\%` representing the perceived stationnarity of the test. The figure
+:numref:`fig-psychometric_function_p1` shows the results of participant 1 for
+his first session on each condition. We can abserved firstly that all three
+:term:`PSE` are above the :math:`0^\circ/s`. If someone makes a head movement
+in front of a fixed sound source, if no effect, were perceived, the perceived
+speed of the sound source should be :math:`0^\circ/s`. In the present case,
+there is a compensation from the participant and the compensation is in the
+opposite direction to the head. This corresponds to a Filehne illusion as
+described by :cite:`Filehne1922`. This suggests that participant 1 makes an
+estimation error that would maybe be on the proprioceptive information
+(:math:`\widehat{H}`) or in the cochlear image motion information
+(:math:`\widehat{I}`) as suggested in vision by :math:`Freeman1998`. Secondly,
+the figure suggests that the Filehne illusion increased with the 
+head speed according to each condition.
+
+.. todo::
+
+  Comment: Nevertheless, as shown on :numref:`fig-head-speeds-avr`, participant
+  does not necessary match the theoric head speed conditions espacially during
+  the test presentation. In order to confirm the effect, the
+  :numref:`fig-individual-differences` shows the :term:`PSE` of each
+  participant for each condition. But instead of plotting the theoric head
+  speeds, it's the actual head speeds that are shown. All participant, whatever
+  the their head speed is suffer the illusion in the same direction (opposite
+  to the head movement). Moreover, the illusion increases as the head speed
+  increases for all participant. An interesting observation would be that the
+  illusion tends to evolve linearly with respect to the head speed. This is
+  difficult to verify as the number of participant is really low. Indeed
+  participant 2 and especially participant 4 doesn't show a linear illusion but
+  it could explained by the fact that their behaviour were a bit strange
+  compare to the other\todo{really badly explained, need to be rewritten with a
+  better explaination (maybe show their psychometric functions for left and
+  right).
+  As shown on :numref:`fig-psychometric_function_p1`, the psychometric function
+  means that if the participant makes a head movement across a static auditory
+  object, this object would appear to move in the opposite direction of the
+  head movement.
+
+.. _fig-psychometric_function_p1:
+
+.. figure:: _static/psychometric_data_p1_mb.svg
+   :align: center
+
+   Psychometric function of the participant 1 for one session. The psychometric
+   function shows the PSE of the test velocity according the test stimulus
+   perceived in the direction of the head. At the :math:`50~\%`, the stimulus
+   appeared to be stationnary. each color represents one condition (:math:`20`,
+   :math:`40` and :math:`60~^\circ/s`).
+
+
+.. _fig-individual-differences:
+
+.. figure:: _static/individual_differences.svg
+   :align: center
+
+   Individual differences of PSEs according to the actual speeds on each
+   condition for each participant.
 
 .. [#fn1] By ponctual, the source will be broadcast by the closest speaker and
     all over will be set at $0$ dB.
@@ -312,3 +465,5 @@ resulting to a low pass filter on the data set [#fn3]_.
 .. [#fn3] For a better understanding of this type of filter, the reader can
     refer to :cite:`Schafer2011`.
 
+.. [#fn4] Or at least in a insifignant way, with small reflections due to the
+    torso.
