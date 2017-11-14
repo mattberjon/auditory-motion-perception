@@ -460,6 +460,154 @@ head speed according to each condition.
    Individual differences of PSEs according to the actual speeds on each
    condition for each participant.
 
+
+.. todo::
+
+  need to talk a bit about the shift problem and the anova ran on Cass data.
+
+Discussion
+----------
+
+Filehne experiment improvements
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+What could be improve for this experiment? Get more participants in order to
+ensure the results and especially confirm the results given by participant 2
+and 4. Improve the pursuit system by putting the speaker closer and reduce the
+theoritical size of the source, and maybe use a higher bandwidth in order to
+get a more ponctual sound source easier to follow. Another idea would be to
+trained a lot people to excute head movement at specified speed by given them
+an auditory feedback if they are too slow or fast.
+
+Stimulus properties
+^^^^^^^^^^^^^^^^^^^
+
+According to the results observed above, all subjects suffered the same effect
+at different strenghs and whatever their actual head speed was. In other words,
+the audio Filehne effect means if someone moves his head in front of a fixed
+sound source, this latter will appear to move in the opposite direction of the
+head movement. Moreover, this effect seems dependent of the head speed. Based
+on these result, we can assume that audition speed perception, like in vision,
+will be affected function of several properties. According to
+:cite:`Freeman1998`, the retinal image will be affected by several stimulus
+properties. In the auditory domain, the cochlear image (:math:`\widehat{I}`)
+will be affected by stimulus properties (:math:`\Omega`) as given by the
+:eq:`eq-filehne-stim`.
+
+.. math::
+   :label: eq-filehne-stim
+
+    \widehat{Object} = \widehat{I}(\Omega) + \widehat{H}
+
+If one of the two estimates evolves in one direction of the other, then the
+perceived velocity will change [#fn5]_. By changing a propertie of a stimulus,
+the cochlear image estimate (:math:`\widehat{I}`) would change (see
+:numref:`tab-audio-vs-vision-filehne-estimates` for equivalence).
+:cite:`Hammett2007,Vaziri-Pashkam2008` suggested that a visual pattern will
+appear to move faster at lower intensities. Hence, the Filehne illusion
+increases as the luminance decreases. Luminance is a visual properties that as
+an equivalent in audition called the intensity. 
+
+.. _fig-intensity-vs-perceived-speed:
+
+.. figure:: _static/intensity_vs_perceived_speed.tex
+   :align: center
+
+   Perceived speed function to the intensity. The blue line represents the
+   visual tendency according of results given by
+   :cite:`Hammett2007,Vaziri-Pashkam2008`. The purple plain line represents the
+   possible behavior in audition that would be the opposite of vision after
+   informal tests.
+
+
+.. _tab-audio-vs-vision-filehne-estimates:
+
++--------------------------------------------+--------------------------------------------+
+| Vision                                     | Audition                                   |
++============================================+============================================+
+| pursuit (:math:`\widehat{P}`)              | neck, vestibulus (:math:`\widehat{H}`)     |
++--------------------------------------------+--------------------------------------------+
+| retinal image motion (:math:`\widehat{E}`) | cochlear image motion (:math`\widehat{I}`) |
++--------------------------------------------+--------------------------------------------+
+Filehne vision versus audition estimates.
+
+.. todo::
+
+  check the letters for each estimates and find a way to put a caption under the
+  table.
+
+Following the above results, if the intensity of a sound increases, the
+resulting speed perception would decrease. Nevertheless, informal tests on the
+author and colleagues suggested that the perceived speed should increase with
+respect of the intensity. Unfortunately, pilot data showed on two naive
+participants reported that participant were unable to do the task. It seems
+that they were unable to make judgment and can't linked perceived speed and
+intensity.
+
+.. todo::
+
+  need to be a bit more precise on the paradigm and why participant were unable
+  to do the task... difficulties to use the speed as the only cue, need to
+  check the exact paradigm.
+
+As explained in the section :ref:`ref-sec-localisation`, localisation cues are
+really important and are function of the frequency
+(:numref:`fig-auditory-cues`). Localisation is usually improved when all
+localisation cues are available. This means that speed perception could be
+affected is the spectral components of the source contains only one or two
+localisation cues in it. :cite:`Mills1958` showed that :term:`MAA` is more
+affected in a specific spectral zone where :term:`ITD` and :term:`ILD` aren't
+effective enough and where the :term:`MAA` in front of the listener increases
+up to :math:`3^\circ` (:numref:`fig-mills-maa`).
+
+.. _fig-mills-maa:
+
+.. figure:: _static/mills_maa.jpg
+   :align: center
+
+   Frequency dependence of localisation blur in azimuth (expressed here as
+   "Minimum Audible Angle") using pure tones, as a function of the sound source
+   azimuth position $\theta$. (After :cite:`Mills1958`).
+
+This result suggests the possibility that the perceived speed would increase
+more if a source with a bandwidth from 2 to 3 kHz is presented where human can
+rely on :term:`ITD` or :term:`ILD`.
+
+Correlation between audio and visual Filehne illusion
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In order to estimate the object motion during pursuit in vision is to combine
+estimates of eye velocity and retinal motion and in audition of head velocity
+and cochlear motion. If in both cases, the combination of the estimates
+happened in an early stage, auditory and visual Filehne illusion should be
+independent. Nevertheless, some recent works such as :cite:`Krukowski2003`
+suggested that 'retinal' and 'extra-retinal' motion pathways shared a common
+noise source suggesting that observers do not have a direct access to the
+retinal motion and that the combination of the estimates should happenned in a
+later stage of the perceptual system. This have been confirmed by
+:cite:`Freeman2009` who used a :term:`2IFC` task in which observers had to
+indicate which interval contained the faster background motion, while pursuing
+a target that moved across the background.
+
+Hence, it would be interesting to lead in parallel both auditory and visual
+Filehne illusion experiments and observe if a correlation between both data
+sets exists (:numref:`fig-audio-vision-filehne-correlation`). If so, it
+will suggest that both auditory and visual motion pathways are shared in a
+later stage of the perceptual system and confirm results given above.
+
+.. _fig-audio-vision-filehne-correlation:
+
+.. figure:: _static/audition_vision_correlation.svg
+   :align: center
+
+   Possible correlation between the visual and auditory Filehne illusion.
+
+.. _fig-auditory-cues:
+
+.. figure:: _static/auditory_cues.svg
+   :align: center
+
+
 .. [#fn1] By ponctual, the source will be broadcast by the closest speaker and
     all over will be set at $0$ dB.
 
@@ -471,3 +619,7 @@ head speed according to each condition.
 
 .. [#fn4] Or at least in a insifignant way, with small reflections due to the
     torso.
+
+.. [#fn5] In this particular case, the illusion could increase, decrease or be
+    invert (as suggested by :cite:`Freeman1998`, that's why velocity is used
+    instead of speed.
