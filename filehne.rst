@@ -413,7 +413,7 @@ opposite direction to the head. This corresponds to a Filehne illusion as
 described by :cite:`Filehne1922`. This suggests that participant 1 makes an
 estimation error that would maybe be on the proprioceptive information
 (:math:`\widehat{H}`) or in the cochlear image motion information
-(:math:`\widehat{I}`) as suggested in vision by :math:`Freeman1998`. Secondly,
+(:math:`\widehat{I}`) as suggested in vision by :cite:`Freeman1998`. Secondly,
 the figure suggests that the Filehne illusion increased with the 
 head speed according to each condition.
 
@@ -510,7 +510,7 @@ an equivalent in audition called the intensity.
 
 .. _fig-intensity-vs-perceived-speed:
 
-.. figure:: _static/intensity_vs_perceived_speed.tex
+.. figure:: _static/intensity_vs_perceived_speed.svg
    :align: center
 
    Perceived speed function to the intensity. The blue line represents the
@@ -522,13 +522,13 @@ an equivalent in audition called the intensity.
 
 .. _tab-audio-vs-vision-filehne-estimates:
 
-+--------------------------------------------+--------------------------------------------+
-| Vision                                     | Audition                                   |
-+============================================+============================================+
-| pursuit (:math:`\widehat{P}`)              | neck, vestibulus (:math:`\widehat{H}`)     |
-+--------------------------------------------+--------------------------------------------+
-| retinal image motion (:math:`\widehat{E}`) | cochlear image motion (:math`\widehat{I}`) |
-+--------------------------------------------+--------------------------------------------+
++--------------------------------------------+---------------------------------------------+
+| Vision                                     | Audition                                    |
++============================================+=============================================+
+| pursuit (:math:`\widehat{P}`)              | neck, vestibulus (:math:`\widehat{H}`)      |
++--------------------------------------------+---------------------------------------------+
+| retinal image motion (:math:`\widehat{E}`) | cochlear image motion (:math:`\widehat{I}`) |
++--------------------------------------------+---------------------------------------------+
 Filehne vision versus audition estimates.
 
 .. todo::
@@ -562,12 +562,12 @@ up to :math:`3^\circ` (:numref:`fig-mills-maa`).
 
 .. _fig-mills-maa:
 
-.. figure:: _static/mills_maa.jpg
+.. figure:: _static/maa_mills.jpg
    :align: center
 
    Frequency dependence of localisation blur in azimuth (expressed here as
    "Minimum Audible Angle") using pure tones, as a function of the sound source
-   azimuth position $\theta$. (After :cite:`Mills1958`).
+   azimuth position :math:`\theta`. (After :cite:`Mills1958`).
 
 This result suggests the possibility that the perceived speed would increase
 more if a source with a bandwidth from 2 to 3 kHz is presented where human can
@@ -609,7 +609,7 @@ later stage of the perceptual system and confirm results given above.
 
 
 .. [#fn1] By ponctual, the source will be broadcast by the closest speaker and
-    all over will be set at $0$ dB.
+    all over will be set at 0 dB.
 
 .. [#fn2] The participant, if necessary could ask for a training for following
     sessions because sessions occurs overs two weeks.
